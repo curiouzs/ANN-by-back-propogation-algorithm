@@ -16,7 +16,7 @@
 4.
 
 ## Program:
-```
+```python
 /*
 Program to implement ANN by back propagation algorithm.
 Developed by   :
