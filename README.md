@@ -9,26 +9,28 @@
 2. Anaconda – Python 3.7 Installation / Moodle-Code Runner /Google Colab
 
 ## Related Theory Concept:
-Algorithm for ANN Backpropagation: • Weight initialization: Set all weights and node thresholds to small random numbers. Note that the node threshold is the negative of the weight from the bias unit(whose activation level is fixed at 1).
+Algorithm for ANN Backpropagation: 
+• Weight initialization: 
+        Set all weights and node thresholds to small random numbers. Note that the node threshold is the negative of the weight from the bias unit(whose activation level is fixed at 1). 
+ 
+• Calculation of Activation: 
+</br>
+1.	The activation level of an input is determined by the instance presented to the network. 
+2.	The activation level oj of a hidden and output unit is determined. 
 
-• Calculation of Activation:
-
-The activation level of an input is determined by the instance presented to the network.
-The activation level oj of a hidden and output unit is determined.
 • Weight training:
 
-Start at the output units and work backward to the hidden layer recursively and adjust weights.
+1.	Start at the output units and work backward to the hidden layer recursively and adjust weights. 
 
-The weight change is completed.
+2.	The weight change is completed. 
 
-The error gradient is given by:
+3.	The error gradient is given by: 
 
-a. For the output units.
+a.	For the output units. 
 
-b. For the hidden units.
+b.	For the hidden units.
 
-Repeat iterations until convergence in term of the selected error criterion. An iteration includes presenting an instance, calculating activation and modifying weights
-
+4.	Repeat iterations until convergence in term of the selected error criterion. An iteration includes presenting an instance, calculating activation and modifying weights. 
 
 ## Algorithm
 1.Import packages
