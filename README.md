@@ -12,7 +12,6 @@
 Algorithm for ANN Backpropagation: 
 • Weight initialization: 
         Set all weights and node thresholds to small random numbers. Note that the node threshold is the negative of the weight from the bias unit(whose activation level is fixed at 1). 
- 
 • Calculation of Activation: 
 </br>
 1.	The activation level of an input is determined by the instance presented to the network. 
@@ -25,6 +24,8 @@ Algorithm for ANN Backpropagation:
 a.	For the output units. 
 b.	For the hidden units.
 4.	Repeat iterations until convergence in term of the selected error criterion. An iteration includes presenting an instance, calculating activation and modifying weights. 
+<br />
+<br />
 
 ## Algorithm
 1.Import packages <br />
