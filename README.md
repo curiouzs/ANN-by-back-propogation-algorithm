@@ -19,25 +19,19 @@ Algorithm for ANN Backpropagation:
 2.	The activation level oj of a hidden and output unit is determined. 
 
 • Weight training:
-
 1.	Start at the output units and work backward to the hidden layer recursively and adjust weights. 
-
 2.	The weight change is completed. 
-
 3.	The error gradient is given by: 
-
 a.	For the output units. 
-
 b.	For the hidden units.
-
 4.	Repeat iterations until convergence in term of the selected error criterion. An iteration includes presenting an instance, calculating activation and modifying weights. 
 
 ## Algorithm
-1.Import packages
-2.Defining Sigmoid Function for output
-3.Derivative of Sigmoid Function
-4.Initialize variables for training iterations and learning rate
-5.Defining weight and biases for hidden and output layer
+1.Import packages <br />
+2.Defining Sigmoid Function for output<br />
+3.Derivative of Sigmoid Function<br />
+4.Initialize variables for training iterations and learning rate<br />
+5.Defining weight and biases for hidden and output layer<br />
 6.Updating Weights
 
 ## Program:
@@ -47,7 +41,6 @@ Program to implement ANN by back propagation algorithm.
 Developed by   : Lokesh Krishnaa M
 RegisterNumber :  212220230030
 """
-
 import numpy as np
 X=np.array(([2,9],[1,5],[3,6]),dtype=float)
 y=np.array(([92],[86],[89]),dtype=float)
@@ -65,12 +58,10 @@ lr=0.1
 inputlayer_neuron=2
 hiddenlayer_neuron=3
 output_neuron=1
-
 wh=np.random.uniform(size=(inputlayer_neuron,hiddenlayer_neuron))
 bh=np.random.uniform(size=(1,hiddenlayer_neuron))
 wout=np.random.uniform(size=(hiddenlayer_neuron,output_neuron))
 bout=np.random.uniform(size=(1,output_neuron))
-
 for i in range(epoch):
     hinp1=np.dot(X,wh)
 hinp=hinp1+bh
@@ -78,7 +69,6 @@ hlayer_act=sigmoid(hinp)
 outinp1=np.dot(hlayer_act,wout)
 outinp=outinp1+bout
 output=sigmoid(outinp)
-
 EO=y-output
 outgrad=derivatives_sigmoid(output)
 d_output=EO* outgrad
@@ -90,13 +80,10 @@ wh+=X.T.dot(d_hiddenlayer)*lr
 print("Input: \n"+str(X))
 print("Actual Output: \n"+str(y))
 print("Predicted Output: \n",output)
-
 ```
 
 ## Output:
-
 ![Screenshot (32)](https://user-images.githubusercontent.com/75234646/169234360-ac61e2f1-87f0-4935-8220-212538eb67c1.png)
-
 
 ## Result:
 Thus the python program successully implemented multi layer artificial neural network using back propagation algorithm.
